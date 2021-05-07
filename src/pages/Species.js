@@ -1,23 +1,13 @@
 import React, { Component } from "react";
 
-import { Table, Tag, Space, Button } from 'antd';
+import { Table, Button } from 'antd';
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    Redirect,
-    BrowserRouter,
-    withRouter
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import '../../src/antd.css';
 
 export default class Species extends Component {
     render() {
-        const { history } = this.props;
-
         let tableData = [];
 
         function firstLetterUpperCase(str) {
@@ -55,7 +45,7 @@ export default class Species extends Component {
                 };
                 tableData.push(element);
                 id++;
-             
+        
         }
 
         const columns = [{

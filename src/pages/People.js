@@ -1,16 +1,8 @@
 import React, { Component } from "react";
 
-import { Table, Tag, Space, Button } from 'antd';
+import { Table, Button } from 'antd';
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    Redirect,
-    BrowserRouter,
-    withRouter
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import moment from 'moment';
 
@@ -18,8 +10,6 @@ import '../../src/antd.css';
 
 export default class People extends Component {
     render() {
-        const { history } = this.props;
-
         let tableData = [];
 
         function firstLetterUpperCase(str) {

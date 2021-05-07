@@ -1,17 +1,9 @@
 import React, { Component } from "react";
 
-import { Table, Tag, Space, Button } from 'antd';
+import { Table, Button } from 'antd';
 
 import '../../src/antd.css';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    Redirect,
-    BrowserRouter,
-    withRouter
-} from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 
 export default class Home extends Component {
     render() {
